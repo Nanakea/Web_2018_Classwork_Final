@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+    font-size: 62.5%;
+    font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+}
+
+body {
+    font-size: 1.4rem;
+    color: #333;
+    background-color: #fff;
+}
+
+/*画像の隙間を埋めるおまじない。*/
+img {
+    vertical-align: bottom;
+}
+
+/*リンク関連*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*リスト関連*/
+ul li {
+    list-style: none;
+}
+
+/*container*/
+#container {
+    width: 960px;
+    margin: 0 auto 100px;
+}
+
+/*header*/
+header {
+    height: 120px;
+    margin: 0 10px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+header .logo {
+    flex: 1;
+    font-size: 3.4rem;
+}
+header .subtitle {
+    flex: 2;
+    font-size: 1.6rem;
+}
+header .open {
+    flex: 1;
+    font-size: 2.0rem;
+    text-align: right;
+}
+
+/*billboard*/
+#billboard {
+    width: 940px;
+    margin: 0 10px 30px;
+}
+
+/*contents*/
+#contents {
+    display: flex;
+    flex-direction: row;
+}
+
+/*sidebox*/
+#sidebox {
+    width: 220px;
+    margin: 0 10px;
+}
+
+/*Navigation*/
+nav {
+		margin-bottom: 120px;
+}
+
+nav li {
+	font-size: 1.6rem;
+	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+	margin-bottom: 10px;
+}
+
+nav li a {
+	display: block;
+	border-left: 5px solid #cccccc;
+	padding: 5px 0 5px 10px;
+}
+
+nav li a:hover {
+	color: #666666;
+	border-left: 5px solid #ff0000;
+}
+
+aside li {
+	margin-bottom: 10px
+}
+
+aside li a:hover {
+	opacity: 0.5;
+}
+
+/*main*/
+main {
+    width: 720px;
+}
+
+main h2 {
+	font-size: 2rem;
+	font-family: 'AppliMincho', 'serif', 'Cinzel';
+	margin: 0 10px 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #333333;
+}
+
+/*pickupbox*/
+#pickupbox {
+	margin: 0 0 50px;
+}
+
+#pickupbox ul {
+	display: flex;
+}
+
+#pickupbox li {
+	flex: l;
+	margin: 0 10px;
+}
+
+#pickupbox li a:hover {
+	opacity: 0.5;
+}
+
+#pickupbox p {
+	line-height: 1.5; /*Body Font Size*/
+}
+
+main p {
+	font-size: 1.2rem;
+	font-family: 'AppliMncho', 'serif', 'Cinzel';
+	margin: 10px 0 0 0;
+} /*Extra*/
+
+/*eventbox*/
+
+#eventbox {
+	margin: 0 0 50px;	
+}
+
+#eventbox ul {
+	display: flex;
+}
+
+#eventbox li {
+	flex: l;
+	margin: 0 10px;
+}
+
+#eventbox li a:hover {
+	opacity: 0.5
+}
+
+#pickupbox h3 {
+	font-size : 1.6rem;
+	font-weight: bold;
+	font-family: 'AppliMncho', 'cinzel', 'serif';
+	color: #cc3300;
+	margin: 10px 0;
+}
+
+/*Newsbox*/
+#newsbox dl {
+	margin: 0 10px;
+	line-height: 2;
+	padding: 10px 20px;
+	height: 200px;
+	background-color: #eee;
+	overflow: scroll;
+}
+
+#newsbox dt {
+	float: left;
+}
+
+#newsbox dt::after {
+	content: "";
+}
+
+#newsbox dd {
+	margin-left: 100px;
+}
+
+#newsbox dd a:hover {
+	text-decoration: underline;
+}
+
+#newsbox .info {
+	font-size: 1.2rem;
+	color: #fff;
+	background-color: #333333;
+	padding: 3px 10px;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+
+#newsbox .event {
+	font-size: 1.2rem;
+	color: #000000;
+	background-color: #50F100;
+	padding: 3px 10px;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+
+#newsbox .news {
+	font-size: 1.2rem;
+	color: #FFFFFF;
+	background-color: #521414;
+	padding: 3px 10px;
+	margin-right: 10px;
+	border-radius: 3px;
+}
+
+/*Footer*/
+footer {
+	width: 100%;
+	color: #ffffff;
+	padding: 50px 0 15px;
+	background-color: #434343
+}
+	
+#footbox {
+	width: 840px;
+	margin: 0 auto 40px;
+	display: flex;
+	flex-direction: row;
+}
+
+footer .footer_left {
+	width: 480px;
+	margin: 0 10px;
+}
+
+footer .footer_left .sitename {
+	font-size: 2rem;
+	font-family: 'Cinzel', 'serif';
+}
+
+footer p {
+	font-style: normal;
+	margin-bottom: 15px;
+}
+
+footer img {
+	margin-bottom: 22px;
+}
+
+footer a:hover {
+	opacity: 0.8;
+}
+
+footer .footer_right {
+	flex: 1;
+	margin:0 10px;
+}
+
+footer small {
+	display: block;
+	width: 960px;
+	text-align: center;
+	margin: 0 auto;
+	color: #cccccc;
+}
